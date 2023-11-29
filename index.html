@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1 >REVELADO</h1>
+      <div class="video-container">
+        <iframe class="video" id="youtube-player" width="880" height="436" src="https://www.youtube.com/embed/chqkLOXbfx8?si=S1olrS-3eyFEH2Bx&controls=0&enablejsapi=1" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      </div>
+    </div>
+
+    <div id="buy-button" style="display: none;">
+      <a href="#">Comprar agora</a>
+    </div>
+    <!-- <div class="hero">
+      <h1>Aqui está sua chance de exercer o mesmo tipo de poder e influência sobre mulheres bonitas que geralmente são reservadas para celebridades, os super ricos, os super bonitos ou os super bem sucedidos!
+      </h1>
+    </div> -->
+    <div class="details">
+      <img src="download.png" alt="Ebook cover">
+      <div>
+        <p>Este ebook é o guia definitivo para quem quer aprender a programar do zero. Você vai aprender os conceitos básicos de programação, as principais linguagens e ferramentas, e como desenvolver projetos reais e práticos.</p>
+        <p>Com este ebook, você vai:</p>
+        <ul>
+          <li>Entender a lógica de programação e os fundamentos da computação</li>
+          <li>Conhecer as linguagens mais populares e demandadas do mercado, como HTML, CSS, JavaScript, Python, Java e C#</li>
+          <li>Aprender a usar frameworks e bibliotecas para facilitar o seu trabalho, como Bootstrap, jQuery, React, Django, Spring e .NET</li>
+          <li>Desenvolver aplicações web, móveis e desktop, com interfaces modernas e funcionais</li>
+          <li>Trabalhar com bancos de dados, APIs, testes, depuração e controle de versão</li>
+          <li>Criar portfólio e currículo para impressionar os recrutadores e conseguir o seu primeiro emprego como programador</li>
+        </ul>
+      </div>
+    </div>
+    <div class="testimonials">
+     <!--  <h2>Veja o que os nossos leitores estão dizendo</h2>
+      <div class="card">
+        <img src="https://i.imgur.com/1Xw7QJN.jpg" alt="Ana">
+        <div class="content">
+          <p>"Eu sempre quis aprender a programar, mas achava que era muito difícil e complicado. Mas depois que eu li esse ebook, eu percebi que era possível e divertido. O ebook é muito bem escrito, com explicações claras e exemplos práticos. Eu consegui criar o meu primeiro site em poucos dias, e agora estou estudando para fazer aplicativos móveis. Eu recomendo esse ebook para todos que querem aprender a programar."</p>
+          <div class="name">Ana, 25 anos</div>
+        </div>
+      </div>
+      <div class="card">
+        <img src="https://i.imgur.com/4U2GDeC.jpg" alt="Bruno">
+        <div class="content">
+          <p>"Eu já tinha alguma experiência com programação, mas eu queria me atualizar e aprender novas tecnologias. Esse ebook foi perfeito para mim, pois ele aborda as linguagens e ferramentas mais modernas e usadas no mercado. Eu aprendi a usar React, Django, Spring e .NET, e melhorei muito o meu nível de programação. Eu consegui um emprego melhor graças a esse ebook."</p>
+          <div class="name">Bruno, 32 anos</div>
+        </div>
+      </div>
+      <div class="card">
+        <img src="https://i.imgur.com/rWYtZaT.jpg" alt="Carla">
+        <div class="content">
+          <p>"Esse ebook é incrível! Ele me ensinou tudo o que eu precisava saber para começar a programar. Eu nunca imaginei que eu seria capaz de fazer aplicações web, móveis e desktop, mas com esse ebook eu consegui. Ele tem muitas dicas, exercícios e projetos para praticar e aprender. Eu me diverti muito e me sinto mais confiante como programadora."</p>
+          <div class="name">Carla, 28 anos</div>
+        </div>
+      </div> -->
+
+      <div class="comments-section">
+        <h2>Comentários <span id="total-comments">(2)</span></h2>
+        <ol>
+          <li class="comment">
+            <img src="76e785e1-65db-4d24-b01f-11563d060531.jpg" alt="User 1">
+            <div class="comment-content">
+              <h3>Usuário 1</h3>
+              <p>Este é um ótimo produto! Eu definitivamente recomendaria para os meus amigos.</p>
+              <div class="comment-footer">
+                <span class="likes">Curtidas: <span id="likes-user1">10</span></span>
+                <span class="replies">Respostas: <span id="replies-user1">2</span></span>
+              </div>
+              <ol class="replies">
+                <li class="reply">
+                  <img src="add8cbf2-fa6e-48b3-83b2-0240867ecf61.jpg" alt="User 3">
+                  <div class="reply-content">
+                    <h4>Usuário 3</h4>
+                    <p>Concordo totalmente!</p>
+                  </div>
+                </li>
+                <!-- Adicione mais respostas conforme necessário -->
+              </ol>
+            </div>
+          </li>
+          <!-- Adicione mais comentários conforme necessário -->
+        </ol>
+
+        <ol>
+          <li class="comment">
+            <img src="76e785e1-65db-4d24-b01f-11563d060531.jpg" alt="User 1">
+            <div class="comment-content">
+              <h3>Usuário 1</h3>
+              <p>Este é um ótimo produto! Eu definitivamente recomendaria para os meus amigos.</p>
+              <div class="comment-footer">
+                <span class="likes">Curtidas: <span id="likes-user1">10</span></span>
+                <span class="replies">Respostas: <span id="replies-user1">2</span></span>
+              </div>
+              <ol class="replies">
+                <li class="reply">
+                  <img src="add8cbf2-fa6e-48b3-83b2-0240867ecf61.jpg" alt="User 3">
+                  <div class="reply-content">
+                    <h4>Usuário 3</h4>
+                    <p>Concordo totalmente!</p>
+                  </div>
+                </li>
+                <!-- Adicione mais respostas conforme necessário -->
+              </ol>
+            </div>
+          </li>
+          <!-- Adicione mais comentários conforme necessário -->
+        </ol>
+
+        <ol>
+          <li class="comment">
+            <img src="76e785e1-65db-4d24-b01f-11563d060531.jpg" alt="User 1">
+            <div class="comment-content">
+              <h3>Usuário 1</h3>
+              <p>Este é um ótimo produto! Eu definitivamente recomendaria para os meus amigos.</p>
+              <div class="comment-footer">
+                <span class="likes">Curtidas: <span id="likes-user1">10</span></span>
+                <span class="replies">Respostas: <span id="replies-user1">2</span></span>
+              </div>
+              <ol class="replies">
+                <li class="reply">
+                  <img src="add8cbf2-fa6e-48b3-83b2-0240867ecf61.jpg" alt="User 3">
+                  <div class="reply-content">
+                    <h4>Usuário 3</h4>
+                    <p>Concordo totalmente!</p>
+                  </div>
+                </li>
+                <!-- Adicione mais respostas conforme necessário -->
+              </ol>
+            </div>
+          </li>
+          <!-- Adicione mais comentários conforme necessário -->
+        </ol>
+
+        <ol>
+          <li class="comment">
+            <img src="76e785e1-65db-4d24-b01f-11563d060531.jpg" alt="User 1">
+            <div class="comment-content">
+              <h3>Usuário 1</h3>
+              <p>Este é um ótimo produto! Eu definitivamente recomendaria para os meus amigos.</p>
+              <div class="comment-footer">
+                <span class="likes">Curtidas: <span id="likes-user1">10</span></span>
+                <span class="replies">Respostas: <span id="replies-user1">2</span></span>
+              </div>
+              <ol class="replies">
+                <li class="reply">
+                  <img src="add8cbf2-fa6e-48b3-83b2-0240867ecf61.jpg" alt="User 3">
+                  <div class="reply-content">
+                    <h4>Usuário 3</h4>
+                    <p>Concordo totalmente!</p>
+                  </div>
+                </li>
+                <!-- Adicione mais respostas conforme necessário -->
+              </ol>
+            </div>
+          </li>
+          <!-- Adicione mais comentários conforme necessário -->
+        </ol>
+      </div>
+      
+  
+    </div>
+  <script src="script.js"></script>
+  <script src="https://www.youtube.com/iframe_api"></script>
+</body>
+</html>

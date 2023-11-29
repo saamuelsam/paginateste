@@ -1,18 +1,18 @@
-document.getElementById('readExcerpt').addEventListener('click', function() {
-  document.getElementById('excerpt').style.display = 'block';
-});
+var player;
+var checkInterval = 0.1; // check every 100 ms (which is 0.1 seconds)
 
-// Seleciona o elemento do player do YouTube
-const youtubePlayer = document.getElementById('youtube-player');
-    
-// Adiciona um ouvinte para o evento 'timeupdate' do player
-youtubePlayer.addEventListener('timeupdate', function() {
-  // Define o tempo em segundos após o qual o botão de compra será exibido
-  const showBuyButtonAt = 60; // Exemplo: aparece após 60 segundos
+function onYouTubeIframeAPIReady() {
+  player = new YT.Player('youtube-player', {
+    events: {
+      'onReady': onPlayerReady
+    }
+  });
+}
 
-  // Verifica se o tempo atual do vídeo atingiu o ponto desejado
-  if (youtubePlayer.currentTime >= showBuyButtonAt) {
-    // Exibe o botão de compra
-    document.getElementById('buy-button').style.display = 'block';
-  }
-});
+function onPlayerReady(event) {
+  setInterval(function() {
+    if (player.getCurrentTime() >= 8 && document.getElementById("buy-button").style.display !== "block") {
+      document.getElementById("buy-button").style.display = "block";
+    }
+  }, checkInterval * 1000);
+}
