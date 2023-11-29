@@ -8,7 +8,7 @@ body {
   font-family: "Poppins", sans-serif;
   margin: 0;
   padding: 0;
-  background-color: linear-gradient(to bottom, #000000, #690000, #000000); /* Fundo de toda a página */
+  background: linear-gradient(to bottom, #000000, #690000, #000000); /* Fundo de toda a página */
 }
 
 .container {
